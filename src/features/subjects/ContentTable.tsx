@@ -10,11 +10,11 @@ export default function ContentTable({ content = [] }: Props) {
       <tbody>
         {content.map((v) => (
           <tr key={v.title}>
-            <td className="font-bold border-solid border-base-300 border-[1px]">
-              {v.title}
+            <td className="  font-bold border-solid border-base-300 border-[1px]">
+              <span className="pl-2"> {v.title}</span>
             </td>
             <td className="border-solid border-base-300 border-[1px]">
-              {v.content}
+              <span className="pl-2"> {v.content}</span>
             </td>
           </tr>
         ))}
