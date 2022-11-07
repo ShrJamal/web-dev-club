@@ -11,7 +11,7 @@ invariant(
 export const authOptions: NextAuthOptions = {
   adapter: PrismaAdapter(db),
   pages: {
-    signIn: '/auth/login',
+    signIn: '/auth',
   },
   providers: [
     GithubProvider({

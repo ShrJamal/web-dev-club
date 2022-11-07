@@ -1,10 +1,10 @@
 import { signIn } from 'next-auth/react'
 import { FaGithub } from 'react-icons/fa'
-import { unstable_getServerSession } from 'next-auth'
-import { authOptions } from '~/pages/api/auth/[...nextauth]'
+
 import type { GetServerSideProps } from 'next'
 import Layout from '~/layouts/default'
 import Image from 'next/image'
+import checkAuthentication from '~/features/auth/checkAuth'
 
 export default function LoginPage() {
   return (
@@ -34,14 +34,7 @@ export default function LoginPage() {
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
-  const session = await unstable_getServerSession(req, res, authOptions)
-  if (session?.user) {
-    return {
-      props: {},
-      redirect: {
-        destination: '/',
-      },
-    }
-  }
+  const check = await checkAuthentication(req, res)
+  if (check) return check
   return { props: {} }
 }
