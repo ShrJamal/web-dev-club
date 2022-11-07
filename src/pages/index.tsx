@@ -7,7 +7,7 @@ export default function HomePage() {
     <Layout>
       <section className="flex flex-col items-center mt-20 mx-10">
         <Image
-          className="sm:hidden"
+          className="md:hidden"
           src="/wdc_logo.png"
           alt="Web Development Club Logo"
           width={400}
@@ -23,7 +23,7 @@ export default function HomePage() {
               Get Started
             </Link>
           </div>
-          <div className="flex-1 hidden sm:flex">
+          <div className="flex-1 hidden md:flex">
             <Image
               src="/wdc_logo.png"
               alt="Web Development Club Logo"
