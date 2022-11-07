@@ -1,0 +1,51 @@
+.DS_Store
+node_modules/
+.pnp
+.pnp.js
+*.pem
+# .vscode/
+.fleet
+.idea
+
+# build
+build/
+package/
+dist/
+dist-ssr/
+.next/
+out/
+
+# debug
+npm-debug.log*
+package-lock.json
+yarn-debug.log*
+yarn-error.log*
+yarn.lock
+pnpm-lock.yaml
+pnpm-debug.log*
+
+# local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.local
+
+# vercel
+.vercel
+
+# PWA files
+**/public/sw.js
+**/public/workbox-*.js
+**/public/worker-*.js
+**/public/sw.js.map
+**/public/workbox-*.js.map
+**/public/worker-*.js.map
+
+#prisma
+prisma/dev.*
+prisma/migrations
+
+#contentlayer
+.contentlayer
