@@ -11,7 +11,7 @@ export default function PostCard(post: Post) {
     >
       <figure>
         <Image
-          src="https://placeimg.com/400/225/arch"
+          src={post.image || 'https://placeimg.com/400/225/arch'}
           alt="Shoes"
           height={200}
           width={400}
