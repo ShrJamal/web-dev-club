@@ -15,7 +15,7 @@ export default function PostLayout({ post }: { post: Post }) {
       <Head>
         <title>{post.title}</title>
       </Head>
-      <article className="w-[100rem] mx-auto prose lg:prose-xl flex flex-col justify-center  mt-10  md:px-10 px-4">
+      <article className="max-w-[50rem] mx-auto prose lg:prose-xl flex flex-col justify-center  mt-10  md:px-10 px-4">
         <div className="mb-6 text-center">
           <h1 className="mb-1 text-3xl font-bold">{post.title}</h1>
           <time dateTime={post.date} className="text-sm text-slate-600">
