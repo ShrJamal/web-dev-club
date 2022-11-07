@@ -3,11 +3,11 @@ export default function PWAHead() {
     <>
       <link rel="manifest" href="/manifest.json" />
       <link rel="apple-touch-icon" href="/icon.png" />
-      <meta name="application-name" content="Next Playground" />
+      <meta name="application-name" content="Web Development Club" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-      <meta name="apple-mobile-web-app-title" content="Next Playground" />
-      <meta name="description" content="Next Playground" />
+      <meta name="apple-mobile-web-app-title" content="Web Development Club" />
+      <meta name="description" content="Web Development Club" />
       <meta name="format-detection" content="telephone=no" />
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="msapplication-config" content="/icons/browserconfig.xml" />

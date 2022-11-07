@@ -1,9 +1,5 @@
 import ThemeSwitcher from './ThemeSwitcher'
-import { MdMenu } from 'react-icons/md'
-import UserAvatar from '~/features/auth/UserAvatar'
 import Logo from './Logo'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
 
 export default function Navbar() {
   return (
@@ -11,7 +7,6 @@ export default function Navbar() {
       <Logo />
       <div className="flex-1" />
       <ThemeSwitcher />
-      <UserAvatar />
     </nav>
   )
 }
