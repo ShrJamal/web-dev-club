@@ -6,7 +6,7 @@ type Props = {
 
 export default function ContentTable({ content = [] }: Props) {
   return (
-    <table className="table table-compact w-[30rem]">
+    <table className="table table-compact">
       <tbody>
         {content.map((v) => (
           <tr key={v.title}>
