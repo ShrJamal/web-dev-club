@@ -1,6 +1,5 @@
 import { signOut, useSession } from 'next-auth/react'
 import Image from 'next/image'
-import Link from 'next/link'
 import { MdExpandMore } from 'react-icons/md'
 
 export default function UserAvatar() {
@@ -36,9 +35,5 @@ export default function UserAvatar() {
       </div>
     )
   }
-  return (
-    <Link href="/auth/login" className="btn btn-ghost">
-      Login
-    </Link>
-  )
+  return null
 }
