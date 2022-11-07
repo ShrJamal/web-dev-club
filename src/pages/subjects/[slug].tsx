@@ -27,7 +27,7 @@ export default function PostLayout({ post }: { post: Post }) {
             <Image src={post.image} alt={post.title} width={500} height={100} />
           )}
         </div>
-        <p className="text-slate-400 text-xs">{post.summary}</p>
+        <caption className="text-slate-400 text-xs">{post.summary}</caption>
         <MDXContent components={{ ContentTable }} />
       </article>
     </Layout>
